@@ -55,11 +55,21 @@ export default {
 				},
 				tech: {
 					blue: '#0A192F',
+					darkBlue: '#081221',
 					lightBlue: '#112240',
 					slate: '#8892B0',
 					lightSlate: '#CCD6F6',
 					white: '#E6F1FF',
-					highlight: '#64FFDA'
+					highlight: '#64FFDA',
+					orange: '#FF7D3D',
+					neon: {
+						teal: '#00FFC6',
+						orange: '#FF6E27',
+						purple: '#B026FF',
+						blue: '#26C9FF'
+					},
+					charcoal: '#1E2A38',
+					darkCharcoal: '#152028'
 				}
 			},
 			borderRadius: {
@@ -85,12 +95,21 @@ export default {
 						opacity: '1',
 						transform: 'translateY(0)'
 					}
+				},
+				'typing': {
+					'from': { width: '0' },
+					'to': { width: '100%' }
+				},
+				'blink': {
+					'50%': { borderColor: 'transparent' }
 				}
 			},
 			animation: {
 				"accordion-down": "accordion-down 0.2s ease-out",
 				"accordion-up": "accordion-up 0.2s ease-out",
-				'fade-in': 'fade-in 0.5s ease-out'
+				'fade-in': 'fade-in 0.5s ease-out',
+				'typing': 'typing 1.5s steps(30, end)',
+				'cursor-blink': 'blink 0.7s infinite'
 			},
 			fontFamily: {
 				sans: ['Inter', 'sans-serif'],

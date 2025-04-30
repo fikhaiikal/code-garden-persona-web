@@ -20,6 +20,7 @@ const Index = () => {
 
     const observer = new IntersectionObserver(handleIntersection, {
       threshold: 0.1,
+      rootMargin: '0px 0px -100px 0px'
     });
 
     document.querySelectorAll('.animate-on-scroll').forEach((element) => {
@@ -30,14 +31,24 @@ const Index = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-tech-blue">
+    <div className="min-h-screen bg-tech-blue text-tech-white">
       <Navbar />
-      <Hero />
-      <About />
-      <Skills />
-      <Projects />
-      <Contact />
-      <Footer />
+      <div className="relative">
+        <Hero />
+        <div className="animate-on-scroll opacity-0 transition-opacity duration-500 delay-100">
+          <About />
+        </div>
+        <div className="animate-on-scroll opacity-0 transition-opacity duration-500 delay-200">
+          <Skills />
+        </div>
+        <div className="animate-on-scroll opacity-0 transition-opacity duration-500 delay-300">
+          <Projects />
+        </div>
+        <div className="animate-on-scroll opacity-0 transition-opacity duration-500 delay-400">
+          <Contact />
+        </div>
+        <Footer />
+      </div>
     </div>
   );
 };

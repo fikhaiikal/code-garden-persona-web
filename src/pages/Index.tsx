@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
 import About from '@/components/About';
-import Skills from '@/components/Skills';
+import TechStack from '@/components/TechStack';
 import Projects from '@/components/Projects';
 import Blog from '@/components/Blog';
 import Contact from '@/components/Contact';
@@ -40,7 +40,7 @@ const Index = () => {
           <About />
         </div>
         <div className="animate-on-scroll opacity-0 transition-opacity duration-500 delay-200">
-          <Skills />
+          <TechStack />
         </div>
         <div className="animate-on-scroll opacity-0 transition-opacity duration-500 delay-300">
           <Projects />

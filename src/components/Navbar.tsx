@@ -33,7 +33,8 @@ const Navbar = () => {
           <a href="#about" className="nav-link"><span className="text-tech-highlight font-mono mr-1">01.</span>About</a>
           <a href="#skills" className="nav-link"><span className="text-tech-highlight font-mono mr-1">02.</span>Skills</a>
           <a href="#projects" className="nav-link"><span className="text-tech-highlight font-mono mr-1">03.</span>Projects</a>
-          <a href="#contact" className="nav-link"><span className="text-tech-highlight font-mono mr-1">04.</span>Contact</a>
+          <a href="#blog" className="nav-link"><span className="text-tech-highlight font-mono mr-1">04.</span>Blog</a>
+          <a href="#contact" className="nav-link"><span className="text-tech-highlight font-mono mr-1">05.</span>Contact</a>
           <Button 
             variant="outline" 
             className="ml-4 border border-tech-highlight text-tech-highlight hover:bg-tech-highlight hover:bg-opacity-10"
@@ -78,11 +79,18 @@ const Navbar = () => {
             <span className="text-tech-highlight font-mono mr-1">03.</span>Projects
           </a>
           <a 
+            href="#blog" 
+            className="text-tech-lightSlate hover:text-tech-highlight"
+            onClick={() => setMobileMenuOpen(false)}
+          >
+            <span className="text-tech-highlight font-mono mr-1">04.</span>Blog
+          </a>
+          <a 
             href="#contact" 
             className="text-tech-lightSlate hover:text-tech-highlight"
             onClick={() => setMobileMenuOpen(false)}
           >
-            <span className="text-tech-highlight font-mono mr-1">04.</span>Contact
+            <span className="text-tech-highlight font-mono mr-1">05.</span>Contact
           </a>
           <Button 
             variant="outline" 
